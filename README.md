@@ -25,7 +25,8 @@ First of all let's analyze a CSV file exported from Capture. These are the field
 4. Note: this is a multi purpose field, you can enter anything here. Although you can use this field to give fixture types a custom name, or a brief one (sometimes Capture fixture names are really annoying). The script asks you if you want to use custom names for fixtures, and if you select "yes" Note field is loaded instead default Fixture field.
 
 Here there is a sample Capture CSV file
-IMAGE
+![Sample CSV file](./samplefile)
+
 
 ### 1. Patch by Fixture name [EDIT PATCH FIELD]
 In this mode you can choose (either via Fixture default names or custom names) a fixture family, and then sequentially patch his istances. Simply select the desidered fixture, then type start address, start channel and voilà. If the fixture channels overflow the selected universe, patching will continue to the next universe.
