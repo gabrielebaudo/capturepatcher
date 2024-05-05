@@ -48,6 +48,6 @@ This way you can manually, or automatically, write down dmx addresses in Circuit
 ### 6. Clear all Patch fields & 7. Clear all Circuit fields
 Utility modes. The name is self explanatory.
 
-### Exit
+### 8. Exit
 Don't think i have to explain this
 
