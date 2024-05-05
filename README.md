@@ -25,7 +25,7 @@ First of all let's analyze a CSV file exported from Capture. These are the field
 4. Note: this is a multi purpose field, you can enter anything here. Although you can use this field to give fixture types a custom name, or a brief one (sometimes Capture fixture names are really annoying). The script asks you if you want to use custom names for fixtures, and if you select "yes" Note field is loaded instead default Fixture field.
 
 Here there is a sample Capture CSV file
-![Sample CSV file](./samplefile)
+![Sample CSV file](./samplefile.png)
 
 
 ### 1. Patch by Fixture name [EDIT PATCH FIELD]
