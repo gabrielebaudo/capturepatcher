@@ -22,4 +22,31 @@ First of all let's analyze a CSV file exported from Capture. These are the field
 1. Fixture: this is the name of the fixture in the Capture library. **Do not change that** The script use this field to group fixture, so let you choose a fixture type and sequentially patch all fixture inside that "family"
 2. Circuit: this is the place you can enter an electric circuit. We'll use this field to write down (manually or with Capture sequential tool) the dmx addresses of the fixture. Capture Solo/Duet/Quartet let's you patch only a fixed amount of universes based on your licence, this way **you can bypass this limit** and write whatever address you want inside the circuit field. 
 3. Patch: this is the real dmx address used by Capture. The script makes the hard work for you, dynamically populating this field according the desidered mode 
-4. Note: this is a multi purpose field, you can enter anything here. You can The script 
+4. Note: this is a multi purpose field, you can enter anything here. Although you can use this field to give fixture types a custom name, or a brief one (sometimes Capture fixture names are really annoying). The script asks you if you want to use custom names for fixtures, and if you select "yes" Note field is loaded instead default Fixture field.
+
+Here there is a sample Capture CSV file
+IMAGE
+
+### 1. Patch by Fixture name [EDIT PATCH FIELD]
+In this mode you can choose (either via Fixture default names or custom names) a fixture family, and then sequentially patch his istances. Simply select the desidered fixture, then type start address, start channel and voilà. If the fixture channels overflow the selected universe, patching will continue to the next universe.
+The calculated dmx addresses will be written down in the Patch field of the output CSV file.
+
+### 2. Patch by Fixture name [EDIT CIRCUIT FIELD]
+Same as mode 1, with the difference that the dmx addresses are writed in the Circuit field instead of patch field. This is more an utility mode.
+
+### 3. Patch entire file [EDIT PATCH FIELD]
+As the name suggests, all the fixture in the file will be patched starting from the selected start universe and start channel. The dmx address is written in Patch field of the output CSV file.
+
+### 4. Patch entire file [EDIT CIRCUIT FIELD]
+Same as mode 3 but the dmx address is written in Circuit field. This is more an utility mode.
+
+### 5. Copy Circuit field to Patch field
+This is the most used mode. It copies the Circuit field to the Patch field of the output CSV file. 
+This way you can manually, or automatically, write down dmx addresses in Circuit field, and then copy to the Patch one without any effort.
+
+### 6. Clear all Patch fields & 7. Clear all Circuit fields
+Utility modes. The name is self explanatory.
+
+### Exit
+Don't think i have to explain this
+
